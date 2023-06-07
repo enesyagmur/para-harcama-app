@@ -2,15 +2,11 @@ import React, { useContext } from "react";
 import { GlobalContext } from "../context/Context";
 
 const Header = () => {
-  const { money, setMoney } = useContext(GlobalContext);
-
-  const add = () => {
-    setMoney(money - 1);
-  };
+  const { money } = useContext(GlobalContext);
 
   return (
     <div>
-      {money} <button onClick={add}>tıkla</button>
+      <h1>{money}</h1>
     </div>
   );
 };

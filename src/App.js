@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
+import ProductList from "./components/ProductList";
 import { GlobalProvider } from "./context/Context";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <GlobalProvider>
         <Header />
+        <ProductList />
       </GlobalProvider>
     </div>
   );

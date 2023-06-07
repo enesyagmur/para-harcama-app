@@ -1,0 +1,20 @@
+[
+  {
+    "name": "araba",
+    "price": 10000,
+    "image": "araba.jpg",
+    "piece": 0
+  },
+  {
+    "name": "uçak",
+    "price": 100000,
+    "image": "uçak.jpg",
+    "piece": 0
+  },
+  {
+    "name": "yat",
+    "price": 1000000,
+    "image": "yat.jpg",
+    "piece": 0
+  }
+]
