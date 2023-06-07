@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/Context";
+import "../style/header.css";
 
 const Header = () => {
   const { money } = useContext(GlobalContext);
 
   return (
-    <div>
-      <h1>{money}</h1>
+    <div className="header">
+      <h2>{money}</h2> $
     </div>
   );
 };

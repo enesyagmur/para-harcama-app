@@ -1,0 +1,16 @@
+.basket {
+  width: 34%;
+  min-height: 150px;
+  display: flex;
+  border: 1px solid gray;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.basketProduct {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

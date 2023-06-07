@@ -9,15 +9,25 @@ const ProductList = () => {
 
   const add = (item) => {
     setMoney(money - item.price);
-    const newArray = [...basket];
-    newArray.push(item);
-    setBasket(newArray);
+    let newArray = [...basket];
+    if (item.piece === 0) {
+      item.piece++;
+      newArray.push(item);
+      setBasket(newArray);
+    } else {
+      item.piece++;
+    }
   };
   const remove = (item) => {
-    setMoney(money + item.price);
-    setBasket(basket.filter((i) => i.name !== item.name));
+    item.piece--;
+    if (item.piece > 0) {
+      setMoney(money + item.price);
+    } else if (item.piece === 0) {
+      setMoney(money + item.price);
+      setBasket(basket.filter((i) => i.name !== item.name));
+    }
   };
-  console.log(basket);
+
   return (
     <div className="productList">
       {products.map((item) => (
