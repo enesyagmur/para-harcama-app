@@ -17,3 +17,6 @@ function App() {
 }
 
 export default App;
+
+// veritabanını düzenleme
+// style işlemleri

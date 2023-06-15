@@ -37,7 +37,7 @@ const ProductList = () => {
           <h5>{item.price}</h5>
           <div className="buttons">
             <button onClick={() => remove(item)}>-</button>
-            <p>0</p>
+            <p>{item.piece}</p>
             <button onClick={() => add(item)}>+</button>
           </div>
         </div>
