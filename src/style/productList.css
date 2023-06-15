@@ -48,15 +48,17 @@
   justify-content: space-around;
   align-items: center;
 }
-.buttons p {
+.buttons .pieceCount {
   width: 30%;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: white;
   font-size: 15px;
   border-radius: 10px;
-  border-bottom: 1px solid gray;
+  border: 1px solid gray;
+  cursor: auto;
 }
 .buttons button {
   width: 30%;
@@ -65,7 +67,6 @@
 }
 
 .buyButton {
-  cursor: pointer;
   background-image: linear-gradient(green, yellowgreen);
   color: white;
 }
@@ -81,5 +82,4 @@
 .on {
   background-image: linear-gradient(pink, red);
   color: white;
-  cursor: pointer;
 }

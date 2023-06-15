@@ -48,7 +48,7 @@ const ProductList = () => {
             >
               Sell
             </button>
-            <p>{item.piece}</p>
+            <button className="pieceCount">{item.piece}</button>
             <button className="buyButton" onClick={() => add(item)}>
               Buy
             </button>

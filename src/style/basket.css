@@ -34,8 +34,22 @@
 }
 
 .totalBasket {
+  height: 80px;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 5px;
+  color: green;
+}
+.totalBasket .clearBasketButton {
+  border: 1px solid red;
+  color: red;
+  width: 100%;
+  background-color: white;
+}
+.totalBasket .clearBasketButton:hover {
+  color: white;
+  background-image: linear-gradient(pink, red);
 }

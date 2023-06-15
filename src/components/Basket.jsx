@@ -25,6 +25,10 @@ const Basket = () => {
     return total;
   };
 
+  const clearBasket = () => {
+    setBasket([]);
+  };
+
   return (
     <div className="basket">
       <Dropdown>
@@ -50,7 +54,12 @@ const Basket = () => {
                   </Dropdown.Item>
                 ))
               : null}
-            <div className="totalBasket">{totalCalculate(basket)}$</div>
+            <div className="totalBasket">
+              {totalCalculate(basket)}${" "}
+              <button className="clearBasketButton" onClick={clearBasket}>
+                Clear
+              </button>
+            </div>
           </div>
         </Dropdown.Menu>
       </Dropdown>
