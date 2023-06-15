@@ -32,3 +32,10 @@
   max-width: 30%;
   max-height: 90%;
 }
+
+.totalBasket {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
