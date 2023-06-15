@@ -53,12 +53,7 @@
     "image": "https://neal.fun/spend/images/year-of-netflix.jpg",
     "piece": 0
   },
-  {
-    "name": "Air Jordans",
-    "price": 125,
-    "image": "https://neal.fun/spend/images/year-of-netflix.jpg",
-    "piece": 0
-  },
+
   {
     "name": "Airpods",
     "price": 199,
@@ -149,12 +144,7 @@
     "image": "https://neal.fun/spend/images/single-family-home.jpg",
     "piece": 0
   },
-  {
-    "name": "McDonalds Franchise",
-    "price": 1500000,
-    "image": "https://neal.fun/spend/images/single-family-home.jpg",
-    "piece": 0
-  },
+
   {
     "name": "Yacht",
     "price": 7500000,

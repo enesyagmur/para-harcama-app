@@ -34,11 +34,11 @@ const ProductList = () => {
         <div className="product">
           <img src={item.image} />
           <h3>{item.name}</h3>
-          <h5>{item.price}</h5>
+          <h5>{item.price}$</h5>
           <div className="buttons">
-            <button onClick={() => remove(item)}>-</button>
+            <button onClick={() => remove(item)}>Sell</button>
             <p>{item.piece}</p>
-            <button onClick={() => add(item)}>+</button>
+            <button onClick={() => add(item)}>Buy</button>
           </div>
         </div>
       ))}
