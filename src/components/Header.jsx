@@ -12,8 +12,8 @@ const Header = () => {
         <p>Spend Elon Musk' Money</p>
       </div>
       <div className="headerBottom">
-        {" "}
-        <h2>{money}</h2> $
+        <h2>{money}</h2>
+        <p>$</p>
       </div>
     </div>
   );

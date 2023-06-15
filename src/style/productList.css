@@ -62,5 +62,24 @@
   width: 30%;
   height: 40px;
   border: none;
+}
+
+.buyButton {
+  cursor: pointer;
+  background-image: linear-gradient(green, yellowgreen);
+  color: white;
+}
+.buyButton:hover {
+  background-image: linear-gradient(yellowgreen, green);
+}
+
+.off {
+  background-color: lightgray;
+  color: gray;
+}
+
+.on {
+  background-image: linear-gradient(pink, red);
+  color: white;
   cursor: pointer;
 }

@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { GlobalContext } from "../context/Context";
 import "../style/productList.css";
 
@@ -28,6 +28,11 @@ const ProductList = () => {
     }
   };
 
+  const sellButtonActive = (name) => {
+    let result = basket.find((i) => i.name === name);
+    return result;
+  };
+
   return (
     <div className="productList">
       {products.map((item) => (
@@ -36,9 +41,17 @@ const ProductList = () => {
           <h3>{item.name}</h3>
           <h5>{item.price}$</h5>
           <div className="buttons">
-            <button onClick={() => remove(item)}>Sell</button>
+            <button
+              key={item.name}
+              className={sellButtonActive(item.name) ? "on" : "false"}
+              onClick={() => remove(item)}
+            >
+              Sell
+            </button>
             <p>{item.piece}</p>
-            <button onClick={() => add(item)}>Buy</button>
+            <button className="buyButton" onClick={() => add(item)}>
+              Buy
+            </button>
           </div>
         </div>
       ))}

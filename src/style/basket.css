@@ -1,18 +1,34 @@
-.basket {
-  width: 34%;
-  min-height: 150px;
-  display: flex;
-  border: 1px solid gray;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  bottom: 10px;
+* {
+  margin: 0;
+  padding: 0;
 }
-.basketProduct {
-  width: 90%;
-  height: 50px;
+.basket {
+  position: absolute;
+  right: 10px;
+  top: 450px;
+}
+.basketBaslik {
+  background-image: linear-gradient(green, yellowgreen);
+}
+
+.basetList {
   display: flex;
+  flex-direction: column;
+}
+
+.basketProduct {
+  width: 240px;
+  height: 100px;
+  margin-bottom: 1px solid gray;
+  display: flex;
+  font-size: 10px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.basketProduct:hover {
+  background-color: white;
+}
+.basketProduct img {
+  max-width: 30%;
+  max-height: 90%;
 }
